@@ -10,11 +10,17 @@ Welcome to **Upul Electronics**, an elegantly designed and fully responsive **el
 ## 📌 Features
 
 ✅ **Modern UI/UX:** Responsive design with a user-friendly navigation bar.  
+
 ✅ **Home Page:** Interactive landing section with video background.  
+
 ✅ **Shop Page:** Browse electronic products with images, prices, and descriptions.  
-✅ **Components Section:** List of various electronic components available for purchase.  
+
+✅ **Components Section:** List of various electronic components available for purchase. 
+
 ✅ **Orders & Feedback:** Customers can leave feedback and order circuit components.  
+
 ✅ **About Us & Contact:** Information about the shop and contact details.  
+
 ✅ **Social Media Integration:** Links to Facebook, Instagram, YouTube, Twitter, and TikTok.  
 
 ---
@@ -48,9 +54,15 @@ We welcome contributions! Feel free to fork this repository, submit issues, or m
 
 ---
 
+## 📜 License
+This project is distributed under the MIT License. Feel free to use it as you wish, and contributions are always welcome!
+
+---
 ## 📞 Contact
 📍 Upul Electronics
+
 📧 Email: anjanasenath@gmail.com
+
 📍 Location: No 102/0/5, Dagonna Rd, Minuwangoda, Sri Lanka
 
 ---
