@@ -32,9 +32,9 @@ Welcome to **Upul Electronics**, an elegantly designed and fully responsive **el
 ## 🚀 How to Run Locally
 
 1️⃣ **Clone the Repository**
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/AnjanaRanasinghe/-UPUL-ELECTRONICS-Website.git
 
-cd Upul-Electronics
+cd -UPUL-ELECTRONICS-Website
 
 ---
 
