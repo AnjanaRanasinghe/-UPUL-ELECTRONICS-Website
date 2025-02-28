@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="shop.css">
+    <title>Shop</title>
+    <link rel="icon" type="image/x-icon" href="logo/logo2.gif">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header id="main-header">
+    <div id="main-header-logo">
+      <a href="../main page/main.html">
+        <img src="logo/logo2.gif" alt="Logo"/>
+      </a>
+    </div>
+
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="../main page/main.html">HOME</a></li>
+        <li><a href="../components/components.html">COMPONENTS</a></li>
+        <li><a href="../shop/shop.html" class="active">SHOP</a></li>
+        <li><a href="../feedback/feedback.html">ORDERS</a></li>
+        <li><a href="../about us/AboutUs.html">ABOUT US</a></li>
+        <li><a href="../sitemap/SiteMap.html">SITE MAP</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+    <div class="slideshow-container">
+        <div class="slides">
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            </div>
+
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            </div>
+
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            </div>
+
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1563770660941-20978e870e26?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            </div>
+        </div>
+        <div class="dots-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+      <br><br>
+      <div class="shop_intro">
+        <h3 class="shop_intro">Shopping made Sustainable</h3>
+        <br>
+        <p>Welcome to Upul Electronics, your trusted source for high-quality electronic components. We cater to hobbyists, 
+          professionals, and industries, offering a comprehensive selection of resistors, capacitors, semiconductors, connectors, 
+          and more. <br><br> Our commitment to quality ensures that you receive reliable parts for your projects and repairs. 
+          With a user-friendly online store, competitive pricing, and fast shipping, Upul Electronics makes it easy to 
+          find and purchase the components you need. <br><br>Our knowledgeable staff is always available to assist with technical 
+          support and product selection. Shop with us today and power your innovations with Upul Electronics.</p>
+      </div>
+      <br><br>
+      <hr class="thin_hr">
+      <br>
+      <div class="cart-container">
+        <button class="cart-btn" onclick="toggleCart()">
+            <img src="https://www.iconsdb.com/icons/preview/white/shopping-cart-xxl.png" alt="Cart Icon" class="cart-icon">
+            <span class="cart-text">View Cart</span>
+        </button>
+        <div class="cart-partition">
+            <div class="cart-items">
+            </div>
+            <br>
+            <div class="cart-total">Total: Rs 0.00</div>
+            <br>
+            <button class="proceed-btn" onclick="proceed_checkout()">Proceed</button>
+        </div>
+    </div>
+    <br>
+      <div id="TVs" class="item_tags">SHOP / TVs</div>
+      <div class="product-tiles">
+        <div class="product-tile">
+            <img src="image/tv2.jpg" alt="Product 1">
+            <div class="item_name">FUJI (JAPAN) 32 INCH HD LED TV WITH 2 YEARS COMPANY WARRANTY  <br></div>
+            <div class="item_price">Rs 34,990.00</div>
+            <div class="order-details">
+              <div class="quantity-container">
+                <label for="Quantity1">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity1" name="quantity" value="1" min="1">
+                    <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+                </div>
+            </div>
+            </div>
+            <button class="add-to-cart" onclick="addItemToCart(this)" data-name="FUJI (JAPAN) 32 INCH HD LED TV" data-price="34,990.00" data-image="image/tv2.jpg">Add to Cart</button>
+        </div>
+        <div class="product-tile">
+          <img src="image/tv3.jpg" alt="Product 2">
+          <div class="item_name">Samsung Smart LED TV Full HD 43 <br></div>
+          <div class="item_price">Rs 45,990.00</div>
+          <div class="order-details">
+            <div class="quantity-container">
+              <label for="Quantity2">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity2" name="quantity" value="1" min="1">
+                  <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+              </div>
+            </div>
+          </div>
+          <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Samsung Smart LED TV Full HD 43:" data-price="45,990.00" data-image="image/tv3.jpg">Add to Cart</button>
+      </div>
+      <div class="product-tile">
+        <img src="image/tv1.jpg" alt="Product 1">
+        <div class="item_name">SAMSUNG LED UN32T <br></div>
+        <div class="item_price">Rs 50,990.00</div>
+        <div class="order-details">
+          <div class="quantity-container">
+            <label for="Quantity3">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity3" name="quantity" value="1" min="1">
+                <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+            </div>
+        </div>
+        </div>
+      <button class="add-to-cart" onclick="addItemToCart(this)" data-name="SAMSUNG LED UN32T:" data-price="50,990.00" data-image="image/tv1.jpg">Add to Cart</button>
+    </div>
+    <div class="product-tile">
+      <img src="image/tvitem.png" alt="Product 1">
+      <div class="item_name">Abans 32 Inch TV Bracket <br></div>
+      <div class="item_price">Rs 1,538.00 </div>
+      <div class="order-details">
+        <div class="quantity-container">
+          <label for="Quantity4">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity4" name="quantity" value="1" min="1">
+              <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+          </div>
+      </div>
+      </div>
+      <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Abans 32 Inch TV Bracket: " data-price="1,538.00" data-image="image/tvitem.png">Add to Cart</button>
+    </div>
+    </div>
+    <br><br><br>
+    <div id="MONITERS" class="item_tags">SHOP / MONITERS </div>
+    <br>
+    <div class="product-tiles">
+      <div class="product-tile">
+          <img src="image/moni1.jpg" alt="Product 1">
+          <div class="item_name">ASUS ProArt PA32UC-K</div>
+          <div class="item_price">Rs 60,990.00</div>
+          <div class="order-details">
+            <div class="quantity-container">
+              <label for="Quantity5">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity5" name="quantity" value="1" min="1">
+                  <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+              </div>
+            </div>
+          </div>
+          <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Zero waste razor: " data-price="60,990.00" data-image="image/moni1.jpg">Add to Cart</button>
+      </div>
+      <div class="product-tile">
+        <img src="image/moni2.jpg" alt="Product 1">
+        <div class="item_name">Asus ProArt PA24AC 24 inch</div>
+        <div class="item_price">Rs 59,990.00</div>
+        <div class="order-details">
+          <div class="quantity-container">
+            <label for="Quantity6">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity6" name="quantity" value="1" min="1">
+                <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+            </div>
+          </div>
+        </div>
+        <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Asus ProArt PA24AC 24 inch: " data-price="59,990.00" data-image="image/moni2.jpg">Add to Cart</button>
+    </div>
+    <div class="product-tile">
+      <img src="image/moni3.jpeg" alt="Product 1">
+      <div class="item_name">ASUS ProArt Display PA279CV 27"</div>
+      <div class="item_price">Rs 70,590.00</div>
+      <div class="order-details">
+        <div class="quantity-container">
+          <label for="Quantity7">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity7" name="quantity" value="1" min="1">
+              <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+          </div>
+      </div>
+      </div>
+      <button class="add-to-cart" onclick="addItemToCart(this)" data-name="ASUS ProArt Display PA279CV 27: " data-price="70,590.00" data-image="image/moni3.jpeg">Add to Cart</button>
+  </div>
+  <div class="product-tile">
+    <img src="image/moni4.jpg" alt="Product 1">
+    <div class="item_name">HUAWEI Monitors</div>
+    <div class="item_price">Rs 26,590.00</div>
+    <div class="order-details">
+      <div class="quantity-container">
+        <label for="Quantity8">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity8" name="quantity" value="1" min="1">
+            <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+        </div>
+      </div>
+    </div>
+    <button class="add-to-cart" onclick="addItemToCart(this)" data-name="HUAWEI Monitors: " data-price="26,590.00" data-image="image/moni4.jpg">Add to Cart</button>
+  </div>
+  </div>
+  <br><br><br>
+
+  <!-- components section -->
+
+  <div id="COMPONENTS" class="item_tags">SHOP / COMPONENTS</div>
+      <div class="product-tiles">
+        <div class="product-tile">
+            <img src="image/conectors.jpg" alt="Product 1">
+            <div class="item_name">Conectors</div>
+            <div class="item_price">Rs 250.00</div>
+            <div class="order-details">
+              <div class="quantity-container">
+                <label for="Quantity9">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity9" name="quantity" value="1" min="1">
+                    <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+                </div>
+              </div>
+            </div>
+            <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Conectors: " data-price="250.00" data-image="image/conectors.jpg">Add to Cart</button>
+        </div>
+        <div class="product-tile">
+          <img src="image/capa.jpg" alt="Product 1">
+          <div class="item_name">Capacitors <br></div>
+          <div class="item_price">Rs 10.00</div>
+          <div class="order-details">
+            <div class="quantity-container">
+              <label for="Quantity10">Quantity:</label>
+              <div class="quantity-input">
+                  <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                  <input type="number" class="quantity" id="Quantity10" name="quantity" value="1" min="1">
+                  <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+              </div>
+          </div>
+          </div>
+          <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Capacitors: " data-price="10.00" data-image="image/capa.jpg">Add to Cart</button>
+      </div>
+      <div class="product-tile">
+        <img src="image/led.jpg" alt="Product 1">
+        <div class="item_name">LEDs <br></div>
+        <div class="item_price">Rs 20.00</div>
+        <div class="order-details">
+          <div class="quantity-container">
+            <label for="Quantity11">Quantity:</label>
+            <div class="quantity-input">
+                <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                <input type="number" class="quantity" id="Quantity11" name="quantity" value="1" min="1">
+                <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+            </div>
+        </div>
+        </div>
+        <button class="add-to-cart" onclick="addItemToCart(this)" data-name="LEDs: " data-price="20.00" data-image="image/led.jpg">Add to Cart</button>
+        </div>
+    <div class="product-tile">
+      <img src="image/resistors.jpg" alt="Product 1">
+      <div class="item_name">Resistors <br></div>
+      <div class="item_price">Rs 5.00</div>
+      <div class="order-details">
+        <div class="quantity-container">
+          <label for="Quantity12">Quantity:</label>
+          <div class="quantity-input">
+              <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+              <input type="number" class="quantity" id="Quantity12" name="quantity" value="1" min="1">
+              <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+          </div>
+      </div>
+      </div>
+      <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Resistors: " data-price="5.00" data-image="image/resistors.jpg">Add to Cart</button>
+    </div>
+    </div>
+    <br><br><br>
+
+    <div id="COMPONENTS" class="item_tags">SHOP / COMPONENTS</div>
+      <div class="product-tiles">
+        <div class="product-tile">
+            <img src="image/diodes.jpg" alt="Product 1">
+            <div class="item_name">Diodes</div>
+            <div class="item_price">Rs 35.00</div>
+            <div class="order-details">
+              <div class="quantity-container">
+                <label for="Quantity13">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity13" name="quantity" value="1" min="1">
+                    <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+                </div>
+            </div>
+            </div>
+            <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Diodes: " data-price="35.00" data-image="image/diodes.jpg">Add to Cart</button>
+        </div>
+        <div class="product-tile">
+          <img src="image/fuses.jpg" alt="Product 1">
+          <div class="item_name">Fuses</div>
+          <div class="item_price">Rs 100.00</div>
+          <div class="order-details">
+            <div class="quantity-container">
+              <label for="Quantity14">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity14" name="quantity" value="1" min="1">
+                  <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+              </div>
+          </div>
+          </div>
+          <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Fuses: " data-price="100.00" data-image="image/fuses.jpg">Add to Cart</button>
+      </div>
+      <div class="product-tile">
+        <img src="image/inductor.jpg" alt="Product 1">
+        <div class="item_name">Inductors</div>
+        <div class="item_price">Rs 50.00</div>
+        <div class="order-details">
+          <div class="quantity-container">
+            <label for="Quantity15">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity15" name="quantity" value="1" min="1">
+                <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+            </div>
+        </div>
+        </div>
+        <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Inductors: " data-price="50.00" data-image="image/inductor.jpg">Add to Cart</button>
+    </div>
+    <div class="product-tile">
+      <img src="image/trans.jpg" alt="Product 1">
+      <div class="item_name">Transistors <br></div>
+      <div class="item_price">Rs 10.00</div>
+      <div class="order-details">
+        <div class="quantity-container">
+          <label for="Quantity16">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity16" name="quantity" value="1" min="1">
+              <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+          </div>
+      </div>
+      </div>
+      <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Organic Reusable Facemask: " data-price="10.00" data-image="image/trans.jpg">Add to Cart</button>
+    </div>
+    </div>
+    <br><br><br>
+    <div class="shop-motive">
+      <h3 class="shop-motive">Supporing the Movement</h3>
+      <br><br>
+      <p class="shop-motive">Thank you for shopping with us at Upul Electronics! <br> We pride ourselves on offering the highest quality electric goods at unbeatable prices. 
+        <br>Whether you're looking for the latest gadgets, reliable home appliances, or essential accessories, we've got you covered. <br><br> Don’t forget to check out our special offers and new arrivals for more amazing deals. <br>Follow us on social media and subscribe to our newsletter to stay updated.
+         <br><br>We look forward to serving you again soon !!</p>
+      <br><br><br>
+    </div>
+    <br><br>
+
+   <!-- FOOTER SECTION -->
+   <footer>
+    <div class="footer-content">
+      <div class="footer-row">
+        <div class="contact-us">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              &nbsp;&nbsp; +94 741459661
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i> <br>
+              No 102/0/5, <br>Dagonna rd, <br>
+              Minuwangoda, Sri Lanka
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              &nbsp;&nbsp;anjanasenath@gmail.com
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="../main page/main.html">Home</a></li>
+            <li><a href="../components/components.html">Components</a></li>
+            <li><a href="../shop/shop.html">Shop</a></li>
+            <li><a href="../feedback/feedback.html">ORDERS</a></li>
+            <li><a href="../about us/AboutUs.html">About Us</a></li>
+            <li><a href="../sitemap/SiteMap.html">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>follow us</h3>
+          <div class="sm-icons">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.tiktok.com" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="student-details">
+        <hr>
+        <br>
+        <p>Web Page Designed By <span>Anjana Ranasinghe</span></p>
+        <br>
+      </div>
+    </div>
+  </footer>  
+
+   
+    <script src="shop.js"></script>
+    <script>
+      const navEl = document.querySelector('.navigationBar');  //Changing the border colour of the navigation bar when strolled to the top
+      window.addEventListener('scroll', () => {
+          if (window.scrollY >= 130) { // Change from window.screenY to window.scrollY
+              navEl.classList.add('navigationBar-scrolled'); // Add the class when scrolling down
+          } else {
+              navEl.classList.remove('navigationBar-scrolled'); // Remove the class when scrolling back up
+          }
+      });
+
+  </script>
+  
+
+</body>
+</html>
+
