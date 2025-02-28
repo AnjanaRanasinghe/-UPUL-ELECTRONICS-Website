@@ -37,7 +37,7 @@ Welcome to **Upul Electronics**, an elegantly designed and fully responsive **el
 
 ## 🚀 How to Run Locally
 
-1️⃣ **Clone the Repository**
+**Clone the Repository**
 git clone https://github.com/AnjanaRanasinghe/-UPUL-ELECTRONICS-Website.git
 
 cd -UPUL-ELECTRONICS-Website
@@ -61,7 +61,7 @@ This project is distributed under the MIT License. Feel free to use it as you wi
 ## 📞 Contact
 📍 Upul Electronics
 
-📧 Email: anjanasenath@gmail.com
+📧 Email: anjana.20231160@iit.ac.lk
 
 📍 Location: No 102/0/5, Dagonna Rd, Minuwangoda, Sri Lanka
 
