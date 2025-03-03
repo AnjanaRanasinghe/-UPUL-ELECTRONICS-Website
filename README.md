@@ -50,6 +50,10 @@ cd -UPUL-ELECTRONICS-Website
 ![image](https://github.com/user-attachments/assets/7fec67e7-5e06-4374-b2f5-884c4fd185a6)
 ![image](https://github.com/user-attachments/assets/e7ffb9ad-edbb-4ed1-917c-8def4ff36356)
 ![image](https://github.com/user-attachments/assets/9681e24d-c2f2-4240-bca8-75bfa177d6b8)
+![image](https://github.com/user-attachments/assets/0a61fbcc-8af8-437d-840f-78778e2ab289)
+![image](https://github.com/user-attachments/assets/5e150599-9668-484e-ab4e-fc1774d0c118)
+![image](https://github.com/user-attachments/assets/386c5902-4caf-422f-aebc-622f23988026)
+
 
 ---
 
